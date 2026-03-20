@@ -9,12 +9,14 @@ FTP_PATH="${FTP_PATH:-/najsit.se/public_html}"
 
 FILES=(
   "index.html"
-  "nyheter.html"
+  "blogg.html"
+  "cv.html"
   "tjanster.html"
   "styles.css"
   "script.js"
   "najsit.png"
   "najsit-gradient.png"
+  "Bild 2023-11-07 kl. 09.57.JPG"
 )
 
 for file in "${FILES[@]}"; do
