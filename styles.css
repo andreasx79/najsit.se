@@ -316,6 +316,42 @@ h3 {
   border-radius: 28px;
 }
 
+.profile-panel {
+  display: grid;
+  grid-template-columns: 0.8fr 1.1fr 0.85fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.profile-image-wrap,
+.cv-hero-image-wrap {
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-facts {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.profile-name {
+  margin: -0.35rem 0 1rem;
+  color: var(--text);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
 .contact-list {
   display: grid;
   gap: 1rem;
@@ -346,9 +382,38 @@ h3 {
   color: var(--accent);
 }
 
+.cv-hero-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.7fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.cv-hero-copy .lead {
+  margin-bottom: 0;
+}
+
 .archive-list {
   display: grid;
   gap: 1rem;
+}
+
+.cv-values {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cv-key-grid,
+.cv-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.cv-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.8;
 }
 
 .archive-item {
@@ -380,6 +445,8 @@ h3 {
 
 @media (max-width: 980px) {
   .hero,
+  .profile-panel,
+  .cv-hero-layout,
   .contact-panel,
   .cards,
   .values {
@@ -388,6 +455,11 @@ h3 {
 
   .metrics {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .cv-key-grid,
+  .cv-columns {
+    grid-template-columns: 1fr;
   }
 }
 
