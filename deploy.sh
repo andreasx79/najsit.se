@@ -17,6 +17,7 @@ FILES=(
   "index.html"
   "cv.html"
   "jobb.html"
+  "om-najsit.html"
   "tjanster.html"
   "uppdrag.html"
   "styles.css"
