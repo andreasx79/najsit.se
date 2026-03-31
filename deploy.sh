@@ -11,6 +11,7 @@ FILES=(
   "artiklar.html"
   "artikel-arbetsgivare.html"
   "artikel-arkitektur.html"
+  "artikel-ledarskap-fotboll.html"
   "artikel-om-najsit.html"
   "artikel-radgivning.html"
   "artikel-tekniskt-ledarskap.html"
